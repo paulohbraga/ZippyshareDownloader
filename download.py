@@ -1,4 +1,4 @@
-
+# Download file interacting with the page
 
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -14,6 +14,6 @@ def downloader(url, id_download_button):
 
 with open("./list.txt") as f:
     while True:
-        line = f.readline()
-        downloader(line, 'dlbutton')
-        if not line: break
+        link = f.readline()
+        downloader(link, 'dlbutton')
+        if not link: break
